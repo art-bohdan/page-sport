@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
+    <link rel="shortcut icon" href="../bootstrap/img/logo(favicon).png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
@@ -57,28 +58,28 @@
         <div class="row d-flex justify-content-evenly gy-4 my-4">
             <div class="col-xl-2 col-lg-2 col-md-5 col-5 align-items-center rect">
                 <div class="icon-box align-items-center">
-                    <img src="img/icon.png" alt="">
+                    <img src="img/icon.png" class="img-about" alt="">
                     <h3 class="about-text my-3">Sportowiec</h3>
                 </div>
             </div>
 
             <div class="col-xl-2 col-lg-2 col-md-5 col-5 align-items-center rect">
                 <div class="icon-box">
-                    <img src="img/man.png" alt="">
+                    <img src="img/man.png"  class="img-about" alt="">
                     <h3 class="about-text my-3">Trener </h3>
                 </div>
             </div>
 
             <div class="col-xl-2 col-lg-2 col-md-5 col-5 align-items-center rect">
                 <div class="icon-box">
-                    <img src="img/note.png" alt="">
+                    <img src="img/note.png"  class="img-about" alt="">
                     <h3 class="about-text my-3">Dietetyk</h3>
                 </div>
             </div>
 
             <div class="col-xl-2 col-lg-2 col-md-5 col-5 align-items-center rect">
                 <div class="icon-box">
-                    <img src="img/мальчик.png" alt="">
+                    <img src="img/мальчик.png"  class="img-about" alt="">
                     <h3 class="about-text my-3">Masażysta</h3>
                 </div>
             </div>
@@ -279,6 +280,7 @@
                         czyli zajmie się Tobą całościowo? Nie mogłeś/łaś trafić lepiej!
                         Przemek oprócz tego, że jest genialnym człowiekiem, jest też wspaniałym Trenerem!
                         Polecam i zachęcam do współpracy z Przemkiem!</p>
+                        <p class="opinie-text mx-5 text-right">Kasia</p>
                 </div>
             </div>
             <div class="col-xl-6 col-md-6 col-xs-12">
@@ -288,6 +290,7 @@
                     <p class="opinie-text mx-5 my-3">
                         Profesjonalne podejście instruktora, ogromna wiedza poparta doświadczeniem, prosty i
                         komunikatywny sposób przekazywania informacji, wielki urok osobisty</p>
+                        <p class="opinie-text mx-5 text-right">Kasia</p>
                 </div>
             </div>
         </div>
@@ -295,16 +298,69 @@
 </section>
 <section>
     <div class="container">
-        <div class="Publikacje">
-            <h2>Publikacje</h2>
+        <div class="publikacje">
+            <h2 class="">Publikacje</h2>
         </div>
-        <div class="row">
-            <div class="col-xl-6 col-md-6 col-xs-12">
-                <img src="img/book.png" alt="">
+        <div class="row gy-2 mt-4 ">
+            <div class="col-12 col-xl-6 col-md-12 d-xl-block" >
+                <img src="img/cover-removebg.png" class="w-100" alt="cover-book">
+            </div>
+            <div class="col-12 col-xl-6 col-md-12">
+                <div class="cover-text w-100 d-block">
+                    <h3 class="card-title text-center mb-3">Książka "Kod zwycięstwa"</h3>
+                    <h6 class="card-title ">Autorzy: Przemysław Stupnowicz, Jakub Maciejewski</h6>
+                    <div class="card-text"><p>Jak to możliwe że potrafią przebiec sto, dwieście lub nawet trzysta
+                        kilometrów bez odpoczynku? Albo pokonują trasę o długości tysiąca
+                        kilometrów w dziesięć dni? Wbrew kontuzjom, nawet tym poważniejszym
+                        jak pęknięcie kości, wbrew ostrzeżeniom i mimo niedowierzaniu otoczenia,
+                        ultramaratończycy porywają się na ekstremalne dystanse – wielogodzinne
+                        i wielodniowe zawody albo czasem samotne biegi przez Appalachy czy z Polski do Hiszpanii.</p>
+                    <p>Przyjrzeliśmy się im dokładnie – w rozmowach, na zawodach, przy analizach medycznych i studiując
+                        uważnie ich osiągnięcia. Okazało się, że superbiegacze mają do opowiedzenia coś więcej niż tylko
+                        przepis na dobry trening, wzmocnienie mięśni i kondycji – ich walka z bólem, kryzysami psychicznymi,
+                        stresem i zmęczeniem jest uniwersalną receptą na pokonanie swoich własnych słabości.</p>
+                    <p>Ultramaratończycy odkryli jakąś tajemnicę w człowieku, odkryli „kod zwycięstwa”.
+                        Dziś sekrety ich wytrzymałości są na wyciągnięcie ręki.</p>
+                    <p class="mb-3">Opowieści Pawła Żuka, Patrycji Bereznowskiej, Augusta Jakubika, Mileny i Bartka Grzegorczyków,
+                        Małgorzaty Pazdy-Pozorskiej, Scotta Jurka, Dariusza Strychalskiego i wielu innych.
+                        Doświadczenie tych wybitnych ultramaratończyków jest na kartach niniejszej książki.</p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary d-block">Zamówić</button>
             </div>
         </div>
     </div>
 </section>
+
+<section>
+    <div class="container">
+        <div class="Opinie">
+            <h2 class="text-center card-title d-flex">Ciekawe artykuły o sporcie i diecie</h2>
+        </div>
+        <div class="card-article justify-content-between align-items-center mb-3">
+        <div class="">
+            <h4 class="cover-text card-text text-op ml-4 d-flex">Powrót do biegania po kwarantannie</h4>
+        </div>
+        <button type="button" class="btn btn-primary btn-op mr-4 d-block">Сzytać</button>
+    </div>
+
+        <div class="card-article justify-content-between align-items-center mb-3">
+        <div class="">
+            <h4 class="cover-text card-text text-op ml-4 d-flex">Chód sportowy, czyli jak chodzić szybciej, niż biegają biegacze</h4>
+        </div>
+        <button type="button" class="btn btn-primary btn-op mr-4 d-block">Сzytać</button>
+    </div>
+
+        <div class="card-article justify-content-between align-items-center">
+        <div class="">
+            <h4 class="cover-text card-text text-op ml-4 d-flex">Domowy superbohater – naturalny sok z owoców i warzyw</h4>
+        </div>
+        <button type="button" class="btn btn-primary btn-op mr-4 d-block">Сzytać</button>
+    </div>
+    </div>
+</section>
+
+
     <!-- JavaScript Bundle with Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
