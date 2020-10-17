@@ -183,14 +183,12 @@ h3 {
 .btn-primary {
   background: #FF472E;
   border-radius: 10px; 
-  margin-right: auto;
-  width: 181px;
+  /* margin-right: auto; */
   padding: 15px 54px;
   border-color: #FF472E;
 }
 
 .card-article {
-  display: flex;
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -209,7 +207,6 @@ h3 {
 }
 
 .btn-op {
-  justify-content: between;
   color: #fff;
   margin-top: revert;
   margin-bottom: revert;
@@ -223,3 +220,8 @@ h3 {
   margin-top: revert;
   margin-bottom: revert;
 }
+
+.text-kontakt h4 {
+  color: #000000;
+}
+
