@@ -1,13 +1,11 @@
 // stylelint-disable at-rule-no-vendor-prefix, declaration-no-important, selector-no-qualifying-type, property-no-vendor-prefix
 
-
 // Reboot
 //
 // Normalization of HTML elements, manually forked from Normalize.css to remove
 // styles targeting irrelevant browsers while applying new styles.
 //
 // Normalize is licensed MIT. https://github.com/necolas/normalize.css
-
 
 // Document
 //
@@ -19,7 +17,6 @@
   box-sizing: border-box;
 }
 
-
 // Root
 //
 // Ability to the value of the root font sizes, affecting the value of `rem`.
@@ -28,7 +25,6 @@
 :root {
   font-size: $font-size-root;
 }
-
 
 // Body
 //
@@ -50,7 +46,6 @@ body {
   -webkit-tap-highlight-color: rgba($black, 0); // 4
 }
 
-
 // Future-proof rule: in browsers that support :focus-visible, suppress the focus outline
 // on elements that programmatically receive focus but wouldn't normally show a visible
 // focus outline. In general, this would mean that the outline is only applied if the
@@ -60,10 +55,9 @@ body {
 // See https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible
 // and https://developer.paciellogroup.com/blog/2018/03/focus-visible-and-backwards-compatibility/
 
-[tabindex="-1"]:focus:not(:focus-visible) {
+[tabindex='-1']:focus:not(:focus-visible) {
   outline: 0 !important;
 }
-
 
 // Content grouping
 //
@@ -82,7 +76,6 @@ hr:not([size]) {
   height: $hr-height; // 2
 }
 
-
 // Typography
 //
 // 1. Remove top margins from headings
@@ -90,7 +83,6 @@ hr:not([size]) {
 //    margin for easier control within type scales as it avoids margin collapsing.
 
 %heading {
-  margin-top: 0; // 1
   margin-bottom: $headings-margin-bottom;
   font-family: $headings-font-family;
   font-style: $headings-font-style;
@@ -129,7 +121,6 @@ h6 {
   @include font-size($h6-font-size);
 }
 
-
 // Reset margins on paragraphs
 //
 // Similarly, the top margin on `<p>`s get reset. However, we also reset the
@@ -140,7 +131,6 @@ p {
   margin-bottom: $paragraph-margin-bottom;
 }
 
-
 // Abbreviations
 //
 // 1. Duplicate behavior to the data-* attribute for our tooltip plugin
@@ -149,13 +139,13 @@ p {
 // 4. Prevent the text-decoration to be skipped.
 
 abbr[title],
-abbr[data-original-title] { // 1
+abbr[data-original-title] {
+  // 1
   text-decoration: underline; // 2
   text-decoration: underline dotted; // 2
   cursor: help; // 3
   text-decoration-skip-ink: none; // 4
 }
-
 
 // Address
 
@@ -165,13 +155,12 @@ address {
   line-height: inherit;
 }
 
-
 // Lists
 
 ol,
-ul {
-  padding-left: 2rem;
-}
+// ul {
+//   padding-left: 2rem;
+// }
 
 ol,
 ul,
@@ -194,17 +183,15 @@ dt {
 // 1. Undo browser default
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 0; // 1
 }
-
 
 // Blockquote
 
 blockquote {
   margin: 0 0 1rem;
 }
-
 
 // Strong
 //
@@ -215,7 +202,6 @@ strong {
   font-weight: $font-weight-bolder;
 }
 
-
 // Small
 //
 // Add the correct font size in all browsers
@@ -224,14 +210,12 @@ small {
   @include font-size($small-font-size);
 }
 
-
 // Mark
 
 mark {
   padding: $mark-padding;
   background-color: $mark-bg;
 }
-
 
 // Sub and Sup
 //
@@ -246,9 +230,12 @@ sup {
   vertical-align: baseline;
 }
 
-sub { bottom: -.25em; }
-sup { top: -.5em; }
-
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
 
 // Links
 
@@ -274,7 +261,6 @@ a:not([href]):not([class]) {
     text-decoration: none;
   }
 }
-
 
 // Code
 
@@ -334,7 +320,6 @@ kbd {
   }
 }
 
-
 // Figures
 //
 // Apply a consistent margin strategy (matches our type styles).
@@ -343,14 +328,12 @@ figure {
   margin: 0 0 1rem;
 }
 
-
 // Images and content
 
 img,
 svg {
   vertical-align: middle;
 }
-
 
 // Tables
 //
@@ -388,7 +371,6 @@ th {
   border-style: solid;
   border-width: 0;
 }
-
 
 // Forms
 //
@@ -445,7 +427,7 @@ select {
 // Set the cursor for non-`<button>` buttons
 //
 // Details at https://github.com/twbs/bootstrap/pull/30562
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
@@ -552,7 +534,7 @@ legend {
 //    be added to `.form-control` as it's not specific enough. For details, see
 //    https://github.com/twbs/bootstrap/issues/11586.
 
-[type="search"] {
+[type='search'] {
   outline-offset: -2px; // 1
   -webkit-appearance: textfield; // 2
 }
@@ -598,7 +580,6 @@ summary {
   cursor: pointer;
 }
 
-
 // Progress
 //
 // Add the correct vertical alignment in Chrome, Firefox, and Opera.
@@ -606,7 +587,6 @@ summary {
 progress {
   vertical-align: baseline;
 }
-
 
 // Hidden attribute
 //

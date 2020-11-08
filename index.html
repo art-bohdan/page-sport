@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- CSS only -->
-    <link rel="shortcut icon" href="../bootstrap/img/logo(favicon).png" type="image/png">
+    <link rel="shortcut icon" href="img/logo(favicon).png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Z nogami w chmurach</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container container-hero align-items-center">
         <div class="nav flex-nowrap"><span href="" class="d-flex logo-brand"></span>
-            <span href="" class="d-flex navbar-brand mr-5">Z nogami<br>w chmurach</span></div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
-          <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarContent">
-            <ul class="navbar-nav ml-lg-auto mb-2 ">
+            <span href="" class="d-flex navbar-brand text-wrap">Z nogami w chmurach</span></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#navContent' aria-controls='navContent' aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-center" id="navContent">
+            <ul class="navbar-nav text-center">
                 <li class="nav-item">
                     <a href="#about-me" class="nav-link">O mnie</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#oferta" class="nav-link">Oferty</a>
+                    <a href="#offer-p" class="nav-link">Oferty</a>
                 </li>
                 <li class="nav-item">
                     <a href="#publications" class="nav-link">Publikacje</a>
@@ -49,9 +49,7 @@
 
 <section id="about-me">
     <div class="container">
-            <div class="about-me">
                 <h2>O mnie</h2>
-            </div>
         <div class="row d-flex justify-content-evenly gy-4 my-4">
             <div class="col-xl-2 col-lg-2 col-md-5 col-5 align-items-center rect">
                 <div class="icon-box align-items-center">
@@ -121,7 +119,7 @@
                 <p>— trener przygotowania motorycznego</p> 
                 <p>— instruktor i sędzia nordic walking</p>
                 <p>— specjalista dietetyk</p>
-                <p>— trener i zawodnik drużyny Epoka Nordica Łódź</p>
+                <p>— trener MKS Metalowiec</p>
                 <p>— wiceprezes i trener KS Ultra Team Łódź</p>
                 </div>
             </div>
@@ -139,14 +137,15 @@
         </div>
     </div>
 </section>
+
 <section id="offer-p">
     <div class="container">
             <h2>Oferty</h2>
-        <div class="row mt-5 gy-3">
+        <div class="row mt-5 mt-md-3 gy-3">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="offer-p-card h-100">
                 <div class="offer-p-about d-flex justify-content-center py-3">
-                    <h3>Plan treningowy biegowy lub chodziarski</h3>
+                    <h3 class="text-center">Plan treningowy biegowy lub chodziarski</h3>
                 </div>
                 <div class="offer-p-info mx-2">
                     <p>Rozpisywany miesięczny plan treningowy na każdy tydzień:</p> 
@@ -163,7 +162,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="offer-p-card h-100">
                 <div class="offer-p-about d-flex justify-content-center py-3">
-                    <h3>Pełna opieka nad zawodnikiem</h3>
+                    <h3 class="text-center">Pełna opieka nad zawodnikiem</h3>
                 </div>
                 <div class="offer-p-info mx-2">
                     <p>Miesięczna opieka nad zawodnikiem:</p> 
@@ -179,7 +178,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="offer-p-card h-100">
                 <div class="offer-p-about d-flex justify-content-center py-3">
-                    <h3>Masaż klasyczny, bańkami, sportowytowy</h3>
+                    <h3 class="text-center">Masaż klasyczny, bańkami, sportowytowy</h3>
                 </div>
                 <div class="offer-p-info mx-2">
                     <div class="mass justify-content-between d-flex">
@@ -191,7 +190,7 @@
                         <p>80 zł</p>
                     </div>
                     <div class="mass justify-content-between d-flex">
-                        <p>Masaż bańkami </br>(przy masażach gratis)</p>
+                        <p>Masaż bańkami</br>(przy masażach gratis)</p>
                         <p>40 zł</p>
                     </div>
                     <div class="mass justify-content-between d-flex">
@@ -206,7 +205,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="offer-p-card h-100">
                 <div class="offer-p-about d-flex justify-content-center py-3">
-                    <h3>Trening indywidualny</h3>
+                    <h3 class="text-center">Trening indywidualny</h3>
                 </div>
                 <div class="offer-p-info mx-2">
                     <p>Trening indywidualny</p> 
@@ -246,7 +245,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="offer-p-card h-100">
                 <div class="offer-p-about d-flex justify-content-center py-3">
-                    <h3>Inne usługi</h3>
+                    <h3 class="text-center">Inne usługi</h3>
                 </div>
                 <div class="offer-p-info mx-2">
                     <p>Ceny do ustalenia indywidualnie:</p> 
@@ -264,37 +263,36 @@
 <section id="opinions">
     <div class="container">
             <h2>Opinie</h2>
-        <div class="row mt-5 gy-3">
+        <div class="row mt-4 gy-3">
             <div class="col-xl-6 col-md-6 col-xs-12">
                 
-                <div class="opinie-card d-block justify-content-center h-100">
+                <div class="opinion-card d-block justify-content-center h-100">
                     <img src="img/check.png" class="check mt-3" alt="check">
-                    <p class="opinie-text mx-5 my-3">Szukasz Trenera, który Cię wysłucha, doradzi, ułoży plan całościowy
+                    <p class="opinion-text mx-5 my-3">Szukasz Trenera, który Cię wysłucha, doradzi, ułoży plan całościowy
                         łącznie z ćwiczeniami wzmacniającymi, zadba o rozciąganie,
                         czyli zajmie się Tobą całościowo? Nie mogłeś/łaś trafić lepiej!
                         Przemek oprócz tego, że jest genialnym człowiekiem, jest też wspaniałym Trenerem!
                         Polecam i zachęcam do współpracy z Przemkiem!</p>
-                        <p class="opinie-text mx-5 text-right">Kasia</p>
+                        <p class="opinion-text mx-5 text-right">Kasia</p>
                 </div>
             </div>
             <div class="col-xl-6 col-md-6 col-xs-12">
                 
-                <div class="opinie-card d-block justify-content-center h-100">
+                <div class="opinion-card d-block justify-content-center h-100">
                     <img src="img/check.png" class="check mt-3" alt="check">
-                    <p class="opinie-text mx-5 my-3">
+                    <p class="opinion-text mx-5 my-3">
                         Profesjonalne podejście instruktora, ogromna wiedza poparta doświadczeniem, prosty i
                         komunikatywny sposób przekazywania informacji, wielki urok osobisty</p>
-                        <p class="opinie-text mx-5 text-right">Kasia</p>
+                        <p class="opinion-text mx-5 text-right">Kasia</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <section id="publications">
     <div class="container">
-        <div class="publikacje">
             <h2 class="">Publikacje</h2>
-        </div>
         <div class="row gy-2 mt-4 ">
             <div class="col-12 col-xl-6 col-md-12 d-xl-block" >
                 <img src="img/cover-removebg.png" class="w-100" alt="cover-book">
@@ -321,7 +319,7 @@
                     </div>
                 </div>
                 <button type="button" onclick="window.location.href = 'https://allegro.pl/oferta/ksiazka-kod-zwyciestwa-9378812679'"
-                 class="btn btn-primary d-block">Zamówić</button>
+                class="btn btn-sell btn-primary d-block">Zamówić</button>
             </div>
         </div>
     </div>
@@ -332,73 +330,118 @@
         <h2 class="text-center card-title d-flex">Ciekawe artykuły o sporcie i diecie</h2>
         <div class="card-article justify-content-between d-md-flex align-items-center mb-3">
         <div class="">
-            <h5 class="cover-text card-text text-op ml-3">Powrót do biegania po kwarantannie</h5>
+            <h5 class="cover-text card-text text-op ">Powrót do biegania po kwarantannie</h5>
         </div>
-        <button type="button" class="btn btn-primary btn-op mr-3">Сzytać</button>
+        <button type="button" class="btn btn-primary btn-op" onclick="window.location.href = 'https://kierunektrener.pl/blog/powrot-do-biegania-po-kwarantannie/'">Сzytać</button>
     </div>
 
         <div class="card-article justify-content-between d-md-flex align-items-center mb-3">
         <div class="">
-            <h5 class="cover-text card-text text-op ml-3">Chód sportowy, czyli jak chodzić szybciej, niż biegają biegacze</h5>
+            <h5 class="cover-text card-text text-op ">Chód sportowy, czyli jak chodzić szybciej, niż biegają biegacze</h5>
         </div>
-        <button type="button" class="btn btn-primary btn-op mr-3">Сzytać</button>
+        <button type="button" class="btn btn-primary btn-op d-flex align-items-md-center" onclick="window.location.href = 'http://radiogol.pl/wiadomosci/chod-sportowy/'">Сzytać</button>
     </div>
 
         <div class="card-article justify-content-between d-md-flex align-items-center">
         <div class="">
-            <h5 class="cover-text card-text text-op ml-3">Domowy superbohater – naturalny sok z owoców i warzyw</h5>
+            <h5 class="cover-text card-text text-op ">Domowy superbohater – naturalny sok z owoców i warzyw</h5>
         </div>
-        <button type="button" class="btn btn-primary btn-op mr-3">Сzytać</button>
+        <button type="button" class="btn btn-primary btn-op" onclick="window.location.href = 'https://planetaeko.pl/domowy-superbohater-naturalny-sok-z-owocow-i-warzyw/'">Сzytać</button>
     </div>
     </div>
 </section>
 
 <section id="kontakt">
     <div class="container">
-            <h2 class="text-center card-title d-flex">Kontakt</h2>
-        <div class="row  gy-5">
+            <h2>Kontakt</h2>
+        <div class="row gy-5 gy-md-3">
             <div class="col-xl-6 col-md-12 d-xl-block">
-                <img src="../bootstrap/img/kontakt.png" class="w-100 mx-auto w-xl-50 justify-content-center" alt="">
+                <img src="img/kontakt.png" class="w-100 mx-auto w-xl-50 justify-content-center" alt="">
             </div>
             <div class="col-xl-6 col-md-12 ">
                 <div class="text-kontakt text-center my-4">
                 <h4>Zainteresowany współpracą?</h4>
                 <h4>Napisz do mnie!</h4>
                 </div>
-                <div class= "row gy-1 mt-3">
+                <form action="#" class="row gy-1 mt-3 was-validated" action="./php/mail.php" id="form" method="POST">
                     <div class="col-md-6 my-2">
-                    <input type="text" class="form-control" placeholder="Imię" aria-label="First name">
-                    <div class="invalid-feedback">
-                        Please enter Name.
+                        <label for="name" class="form-label"></label>
+                        <input type="text" class="form-control is-invalid _req" id="validationServer01" id="validationTooltip01" placeholder="Imię" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <label for="surname" class="form-label"></label>
+                        <input type="text" class="form-control is-invalid _req" id="validationServer02" id="validationTooltip02" placeholder="Nazwisko" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                <div class="col-md-6 my-2">
+                    <label for="email" class="form-label"></label>
+                    <input type="email" class="form-control is-invalid _req _email" id="validationServer03" placeholder="Email" id="inputEmail4" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                </div>
+            <div class="col-md-6 my-2">
+                <label for="phone" class="form-label"></label>
+                <input type="tel" class="form-control is-invalid _req" id="validationServer04" name="phone" placeholder="Telefon" pattern="[+]{1}[0-9]{2}[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                <div class="valid-feedback">
+                    Looks good!
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Nazwisko" aria-label="Last name">
-                </div>
-                <div class="col-md-6 my-2">
-                    <!-- <label for="inputEmail4" class="form-label">Email</label> -->
-                    <input type="email" class="form-control" placeholder="Email" id="inputEmail4">
-                </div>
-            <div class="col-md-6">
-                <!-- <label for="inputEmail4" class="form-label">Email</label> -->
-                <input type="tel" class="form-control" name="phone" placeholder="Telefon" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                </div>
                 <div class="my-2">
-                <!-- <label for="exampleFormControlTextarea1" class="form-label">Textarea</label> -->
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                <label for="" class="form-label"></label>
+                <textarea class="w-100 _req" rows="6" placeholder=" Some text"></textarea>
             </div>
-            </div>
-            <button type="button" class="btn btn-primary btn-op w-100 mt-5">Wysłać</button>
-                </div>
+            </form>
+            <button type="button" class="btn btn-primary btn-op-form w-100 mt-5" value="SEND" id="singlebutton" type="button">Wysłać</button>
             </div>
         </div>
 </section>
+<form action="#" class="row gy-1 mt-3 was-validated example" action="./php/sendmail.php" id="form" method="POST">
+    <div class="col-md-6 my-2">
+        <label for="name" class="form-label"></label>
+        <input type="text" class="form-control is-invalid _req" id="validationServer01" id="validationTooltip01" placeholder="Imię" required>
+        <div class="valid-feedback">
+        Looks good!
+        </div>
+    </div>
+    <div class="col-md-6 my-2">
+        <label for="surname" class="form-label"></label>
+        <input type="text" class="form-control is-invalid _req" id="validationServer02" id="validationTooltip02" placeholder="Nazwisko" required>
+        <div class="valid-feedback">
+        Looks good!
+        </div>
+    </div>
+<div class="col-md-6 my-2">
+    <label for="email" class="form-label"></label>
+    <input type="email" class="form-control is-invalid _req _email" id="validationServer03" placeholder="Email" id="inputEmail4" required>
+    <div class="valid-feedback">
+        Looks good!
+        </div>
+</div>
+<div class="col-md-6 my-2">
+<label for="phone" class="form-label"></label>
+<input type="tel" class="form-control is-invalid _req" id="validationServer04" name="phone" placeholder="Telefon" pattern="[+]{1}[0-9]{2}[0-9]{3}[0-9]{3}[0-9]{3}" required>
+<div class="valid-feedback">
+    Looks good!
+    </div>
+</div>
+<div class="my-2">
+<label for="" class="form-label"></label>
+<textarea class="w-100 _req" rows="6" placeholder=" Some text"></textarea>
+</div>
+</form>
+<button type="button" class="btn btn-primary btn-op-form w-100 mt-5"  id="singlebutton" type="button">Wysłać</button>
+</div>
 
 
-    <!-- JavaScript Bundle with Popper.js -->
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/bootstrap/jquery/jquery-3.5.1.min.js"></script>
-    <!-- <script type="text/javascript" src="/js/jquery.dimensions.js"></script> -->
+    <script src="./jquery/jquery.sendmail.min.js"></script>
+    <script src="./jquery/jquery.sendmail.js"></script>
 </body>
 </html>

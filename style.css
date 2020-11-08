@@ -12,6 +12,10 @@ html {
   margin-bottom: 100px;
 }
 
+#about-me {
+  margin-top: 100px;
+}
+
 .container-hero {
   margin-bottom: 0;
 }
@@ -40,41 +44,41 @@ h3 {
 }
 header {
   width: 100%;
-  background-image: url(../bootstrap/img/bg.png);
+  background: url(img/bg.png);
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding-top: 25px;
+  padding-bottom: 338px;
+  padding-top: 329px;
 }
 
 .logo-brand {
-  background-image: url(../bootstrap/img/logo.png);
+  background: url(img/logo.png);
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
   width: 71px;
-  height: 77.2px;
+  height: 77px;
   margin-right: 5px;
 }
 
 .navbar {
   background: #0f6188;
 }
+ul li {
+  margin-right: 50px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
 
 .navbar-brand {
   margin-left: 5px;
   font-family: Overlock;
   font-style: normal;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  margin-right: 60px;
-}
-
-.offer {
-  margin-top: 229px;
-  padding-bottom: 338px;
+  width: 6rem;
 }
 
 .rect {
@@ -165,13 +169,13 @@ header {
   justify-content: flex-end;
 }
 
-.opinie-card {
+.opinion-card {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
-.opinie-card .opinie-text {
+.opinion-card .opinion-text {
   color: #000;
 }
 
@@ -200,9 +204,14 @@ header {
 }
 
 .card-article {
+  margin-top: 30px;
   background: linear-gradient(0deg, #ffffff, #ffffff);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+}
+
+.card-article h5 {
+  margin-left: 30px;
 }
 
 .btn:hover {
@@ -219,39 +228,228 @@ header {
 
 .btn-op {
   color: #fff;
-  margin-top: revert;
-  margin-bottom: revert;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 30px;
   background: #ff472e;
   border-radius: 10px;
   padding: 15px 54px;
   border-color: #ff472e;
 }
 
-.card-article .text-op {
-  margin-top: revert;
-  margin-bottom: revert;
-}
-
 .text-kontakt h4 {
   color: #000000;
 }
 
+.btn-op-form {
+  color: #fff;
+  margin-top: revert;
+  margin-bottom: revert;
+  margin-right: 30px;
+  background: #ff472e;
+  border-radius: 10px;
+  padding: 15px 54px;
+  border-color: #ff472e;
+}
+
+label {
+  display: grid;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  p {
+    font-size: 14px;
+  }
+}
 @media (min-width: 576px) and (max-width: 768px) {
   header {
-    background-image: url(../bootstrap/img/bg-tablet.png);
+    background-image: url(img/bg-tablet.png);
     max-width: 100%;
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 238px;
+    padding-top: 129px;
+  }
+
+  header .offer h1 {
+    font-size: 18px;
+  }
+  header .offer h4 {
+    font-size: 13px;
+  }
+
+  .nav-link {
+    padding: 0 0 10px 0;
+    margin-right: 0;
+  }
+  ul li {
+    font-size: 12px;
+    margin-right: 0;
+  }
+  .container {
+    margin-bottom: 50px;
+  }
+
+  #about-me {
+    margin-top: 50px;
+  }
+
+  .container {
+    margin-top: 100px;
+  }
+
+  .container-hero {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .logo-brand {
+    width: 50px;
+    height: 54px;
+    margin-right: 3px;
+  }
+
+  .navbar-brand {
+    margin-left: 3px;
+    font-size: 12px;
+    width: 4rem;
+  }
+
+  button {
+    align-items: center;
+  }
+
+  .button.btn-sell.btn.btn-sell.btn-primary {
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    align-items: center;
+    align-items: center;
+  }
+  .btn-op {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-article h5 {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .card-article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card-article .text-op {
+    text-align: center;
   }
 }
 
 @media (min-width: 0px) and (max-width: 576px) {
   header {
-    background-image: url(../bootstrap/img/bg-mob.png);
+    background-image: url(img/bg-mobi.png);
     max-width: 100%;
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 138px;
+    padding-top: 129px;
+  }
+
+  header .offer h1 {
+    font-size: 18px;
+  }
+  header .offer h4 {
+    font-size: 13px;
+  }
+
+  .nav-link {
+    padding: 0 0 10px 0;
+    margin-right: 0;
+  }
+  ul li {
+    font-size: 12px;
+    margin-right: 0;
+  }
+  .container {
+    margin-bottom: 50px;
+  }
+
+  .container-hero {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #about-me {
+    margin-top: 50px;
+  }
+
+  .logo-brand {
+    width: 50px;
+    height: 54px;
+    margin-right: 3px;
+  }
+
+  .navbar-brand {
+    margin-left: 3px;
+    font-size: 12px;
+    width: 4rem;
+  }
+
+  .btn-op {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-article {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .card-article h5 {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .card-article .text-op {
+    text-align: center;
   }
 }
