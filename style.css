@@ -164,7 +164,7 @@ ul li:last-child {
 }
 
 .offer-p-info .offer-p-pay {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   display: flex;
   justify-content: flex-end;
 }
@@ -186,6 +186,13 @@ ul li:last-child {
   display: flex;
   margin: 0 auto;
   height: 75px;
+}
+
+.img_public {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 .cover-text {
@@ -252,13 +259,59 @@ ul li:last-child {
   border-color: #ff472e;
 }
 
-label {
-  display: grid;
+.contact_img {
+  margin-top: 0;
+  align-items: center;
+  width: 70%;
 }
 
+.social img {
+  height: 28px;
+  width: 28px;
+  margin: 20px 10px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social_img:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .img_public {
+    width: 70%;
+  }
+
+  .social img {
+    height: 28px;
+    width: 28px;
+    margin: 20px 10px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .social_img:last-child {
+    margin-right: 0;
+  }
+}
 @media (min-width: 576px) and (max-width: 992px) {
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 16px;
+  }
   p {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 10px 44px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -333,11 +386,17 @@ label {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 14px;
+    padding: 10px 44px;
   }
 
   .card-article h5 {
     margin-top: 10px;
     margin-left: 0;
+  }
+
+  .img_public {
+    width: 70%;
   }
 
   h2 {
@@ -353,7 +412,7 @@ label {
     font-size: 18px;
   }
   p {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .card-article {
@@ -368,20 +427,20 @@ label {
 
 @media (min-width: 0px) and (max-width: 576px) {
   header {
-    background-image: url(img/bg-mobi.png);
+    background-image: url(img/bg-mobi-test.png);
     max-width: 100%;
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 138px;
-    padding-top: 129px;
+    padding-top: 50px;
   }
 
   header .offer h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
   header .offer h4 {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .nav-link {
@@ -416,12 +475,21 @@ label {
     width: 4rem;
   }
 
+  .btn {
+    padding: 7px 34px;
+    font-size: 12px;
+  }
+
   .btn-op {
     display: flex;
     align-items: center;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 7px 34px;
+  }
+  .img_public {
+    width: 70%;
   }
 
   .card-article {
@@ -435,19 +503,22 @@ label {
   }
 
   h2 {
-    font-size: 20px;
-  }
-  h3 {
     font-size: 18px;
   }
-  h4 {
-    font-size: 16px;
-  }
-  h5 {
+  h3 {
     font-size: 14px;
   }
+  h4 {
+    font-size: 14px;
+  }
+  /* h5 {
+    font-size: 10px;
+  } */
+  h6 {
+    font-size: 10px;
+  }
   p {
-    font-size: 12px;
+    font-size: 8px;
   }
   .card-article .text-op {
     text-align: center;
