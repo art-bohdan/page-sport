@@ -1,0 +1,27 @@
+@import '_variables.scss';
+
+#about-me {
+  margin-top: 100px;
+  .about-text {
+    color: $primaryBColor;
+  }
+  .rect {
+    background: $primaryWColor;
+    border: 1px solid rgba(76, 157, 208, 0.35);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .img-about {
+    height: 45px;
+    margin-top: 23px;
+  }
+
+  #about-photo {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+}

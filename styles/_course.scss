@@ -1,0 +1,27 @@
+@import './_variables.scss';
+
+#course {
+  .what-do1 {
+    background: linear-gradient(89.85deg, #4197cd -4.48%, rgba(65, 151, 205, 0) 99.86%);
+    border-radius: 10px;
+  }
+  .what-do2 {
+    background: linear-gradient(89.85deg, #32c853 -4.48%, #ffffff 99.86%);
+    border-radius: 10px;
+  }
+  .what-do3 {
+    background: linear-gradient(89.85deg, #ff472e -4.48%, rgba(255, 71, 46, 0) 99.86%);
+    border-radius: 10px;
+  }
+  .what-do4 {
+    background: linear-gradient(89.85deg, #ff922e -4.48%, rgba(255, 152, 0, 0) 99.86%);
+    border-radius: 10px;
+  }
+  .info {
+    color: $primaryBColor;
+  }
+
+  .info p {
+    margin-bottom: 5px;
+  }
+}

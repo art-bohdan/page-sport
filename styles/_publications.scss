@@ -1,0 +1,17 @@
+@import './_variables.scss';
+
+#publications {
+  .img_public {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .cover-text {
+    color: $primaryBColor;
+    h3 {
+      color: $primaryBColor;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.logo-brand {
+  background: url(../img2.0/logo.webp);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 71px;
+  height: 77px;
+  margin-right: 5px;
+}
+
+.navbar {
+  background: #0f6188;
+}
+
+ul li {
+  margin-right: 50px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar-brand {
+  margin-left: 5px;
+  font-family: Overlock;
+  font-style: normal;
+  width: 6rem;
+}

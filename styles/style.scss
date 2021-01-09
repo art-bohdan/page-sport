@@ -1,0 +1,323 @@
+@import './_header.scss';
+@import './_about.scss';
+@import './_variables.scss';
+@import './_navbar.scss';
+@import './_course.scss';
+@import '_offer.scss';
+
+// @include добавить ф-цию в тег
+// @extend скопировать параметры с одного тега в другой
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+.container-hero {
+  margin-bottom: 0;
+}
+
+.h2,
+h2 {
+  font-size: calc(1.3rem + 0.9vw);
+  display: flex;
+  justify-content: center;
+  color: $primaryBColor;
+}
+
+.h3,
+h3 {
+  font-size: calc(1rem + 0.6vw);
+  color: $primaryWColor;
+}
+
+.btn-primary {
+  background: #ff472e;
+  border-radius: 10px;
+  padding: 15px 54px;
+  border-color: #ff472e;
+  &:hover {
+    color: #fff;
+    background: #ff442c;
+    border-color: #fd2e12;
+  }
+  .btn-op {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    background: #ff472e;
+    border-radius: 10px;
+    padding: 15px 54px;
+    border-color: #ff472e;
+  }
+  .btn-op-form {
+    color: #fff;
+    margin-top: revert;
+    margin-bottom: revert;
+    margin-right: 30px;
+    background: #ff472e;
+    border-radius: 10px;
+    padding: 15px 54px;
+    border-color: #ff472e;
+  }
+}
+
+.btn:hover {
+  color: #fff;
+  background: #ff442c;
+  border-color: #fd2e12;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .img_public {
+    width: 70%;
+  }
+
+  .social img {
+    height: 28px;
+    width: 28px;
+    margin: 20px 10px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .social_img:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 10px 44px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  header {
+    background-image: url(./img2.0/bg-tablet.webp);
+    max-width: 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 238px;
+    padding-top: 129px;
+  }
+
+  header .offer h1 {
+    font-size: 18px;
+  }
+  header .offer h4 {
+    font-size: 13px;
+  }
+
+  .nav-link {
+    padding: 0 0 10px 0;
+    margin-right: 0;
+  }
+  ul li {
+    font-size: 12px;
+    margin-right: 0;
+  }
+  .container {
+    margin-bottom: 50px;
+  }
+
+  #about-me {
+    margin-top: 50px;
+  }
+
+  .container {
+    margin-top: 100px;
+  }
+
+  .container-hero {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .logo-brand {
+    width: 50px;
+    height: 54px;
+    margin-right: 3px;
+  }
+
+  .navbar-brand {
+    margin-left: 3px;
+    font-size: 12px;
+    width: 4rem;
+  }
+
+  button {
+    align-items: center;
+  }
+
+  .button.btn-sell.btn.btn-sell.btn-primary {
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    align-items: center;
+    align-items: center;
+  }
+  .btn-op {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 10px 44px;
+  }
+
+  .card-article h5 {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .img_public {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  .card-article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card-article .text-op {
+    text-align: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+  header {
+    background-image: url(./img2.0/bg-mobi-test.webp);
+    max-width: 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 138px;
+    padding-top: 50px;
+  }
+
+  header .offer h1 {
+    font-size: 16px;
+  }
+  header .offer h4 {
+    font-size: 10px;
+  }
+
+  .nav-link {
+    padding: 0 0 10px 0;
+    margin-right: 0;
+  }
+  ul li {
+    font-size: 12px;
+    margin-right: 0;
+  }
+  .container {
+    margin-bottom: 50px;
+  }
+
+  .container-hero {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #about-me {
+    margin-top: 50px;
+  }
+
+  .logo-brand {
+    width: 50px;
+    height: 54px;
+    margin-right: 3px;
+  }
+
+  .navbar-brand {
+    margin-left: 3px;
+    font-size: 12px;
+    width: 4rem;
+  }
+
+  .btn {
+    padding: 7px 34px;
+    font-size: 12px;
+  }
+
+  .btn-op {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px 34px;
+  }
+  .img_public {
+    width: 70%;
+  }
+
+  .card-article {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .card-article h5 {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 8px;
+  }
+  .card-article .text-op {
+    text-align: center;
+  }
+}
